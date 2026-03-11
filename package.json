@@ -1,0 +1,22 @@
+{
+  "name": "dwptest",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test:chrome": "cypress run --config baseUrl=${baseUrl} --browser chrome",
+    "cy:test": "cypress run --config baseUrl=${baseUrl}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.11.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "nonGlobalStepDefinitions": false
+  }
+}
